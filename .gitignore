@@ -1,49 +1,111 @@
-# History files
+# ==================================================
+# CORE REPLICATION SAFETY (DO NOT COMMIT DATA)
+# ==================================================
+data/raw/
+data/processed/
+output/
+temp/
+logs/
+
+# Stata / statistical data
+*.dta
+*.sav
+*.por
+*.sas7bdat
+*.csv
+*.xlsx
+*.xls
+*.shp
+*.dbf
+*.prj
+*.gdb/
+*.zip
+
+# ==================================================
+# STATA
+# ==================================================
+*.log
+*.smcl
+*.sttmp
+*.tmp
+*.gph
+*.ster
+profile.do
+
+# ==================================================
+# R
+# ==================================================
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
 .RDataTmp
-
-# User-specific files
 .Ruserdata
+.Renviron
 
-# Example code in package build process
+# RStudio
+.Rproj.user/
+rsconnect/
+
+# R CMD build / check
 *-Ex.R
-
-# Output files from R CMD build
 /*.tar.gz
-
-# Output files from R CMD check
 /*.Rcheck/
 
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
+# R Markdown / knitr
 *_cache/
-/cache/
-
-# Temporary files created by R markdown
+cache/
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
-.Renviron
-
-# pkgdown site
+# Vignettes / pkgdown
+vignettes/*.html
+vignettes/*.pdf
 docs/
 
-# translation temp files
-po/*~
+# OAuth tokens
+.httr-oauth
 
-# RStudio Connect folder
-rsconnect/
+# ==================================================
+# LATEX
+# ==================================================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# ==================================================
+# FIGURES / OUTPUT
+# ==================================================
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.eps
+*.svg
+
+# ==================================================
+# OS / EDITOR
+# ==================================================
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ==================================================
+# VERSIONING EXCEPTIONS
+# ==================================================
+!README.md
+!data/README.md
+!output/README.md
